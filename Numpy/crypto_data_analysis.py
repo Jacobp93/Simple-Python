@@ -14,4 +14,4 @@ countries = [yf.Ticker(x).get_info()['country'] for x in crypto]
 market_cap = [yf.Ticker(x).get_info()['marketcap'] for x in crypto]
 
 
-print(yf.Ticker("FB").get_info())
+print(yf.Ticker("").get_info())
