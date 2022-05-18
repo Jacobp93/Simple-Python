@@ -10,7 +10,7 @@ start = datetime.datetime(2020, 1, 1)  # time frames for data (YY MM DD)
 end = datetime.datetime(2020, 6, 4)
 
 
-# api details
+# api details --- update ticker below to alter api call
 XRP = web.DataReader('XRP-USD', 'yahoo', start, end)
 BTC = web.DataReader('BTC-USD', 'yahoo', start, end)
 ETH = web.DataReader('ETH-USD', 'yahoo', start, end)
@@ -59,4 +59,3 @@ layout = {
 
 fig = dict(data=data, layout=layout)
 py.plot(fig, filename='cryptoprices.html')
-
