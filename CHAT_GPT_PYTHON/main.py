@@ -2,7 +2,7 @@ import openai
 import click
 import os
 
-openai.api_key = "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"  # Replace with your actual OpenAI API key
+openai.api_key = "  "  # Replace with your actual OpenAI API key
 
 def get_gpt3_response(prompt):
     response = openai.Completion.create(
